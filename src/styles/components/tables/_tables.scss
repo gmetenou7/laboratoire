@@ -1,0 +1,164 @@
+.table {
+  width: 100%;
+  z-index: 0;
+
+  .table-header {
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0c0d12;
+    font-weight: 700;
+
+    th {
+      padding: 15px 10px;
+    }
+
+    .status-col {
+      width: 10%;
+    }
+
+    .code-col {
+      width: 20%;
+    }
+
+    .action-col {
+      width: 10%;
+    }
+
+    .date-col {
+      width: 40%;
+    }
+  }
+
+  .table-cell {
+    border: none;
+    padding: 0 5px;
+    transition: all 0.5s !important;
+
+    &:hover {
+      background-color: #e7eaff;
+      box-shadow: 0px 0px 10px -2px #cfcdffd6;
+    }
+
+    td {
+      border-top: 1px dashed #e7eaff;
+      padding: 15px 10px;
+      font-size: 16px;
+    }
+
+    .action-icon {
+      font-size: 25px;
+      transition: all 0.5s;
+      text-decoration: none;
+
+      .icon-tooltip {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          .tooltip-text {
+            display: block;
+          }
+        }
+
+        .icon-view {
+          color: $main-blue;
+          cursor: pointer;
+        }
+
+        .icon-edit {
+          color: $color-info;
+          cursor: pointer;
+        }
+
+        .icon-delete {
+          color: $color-danger;
+          cursor: pointer;
+        }
+
+        .tooltip-text {
+          position: absolute;
+          font-size: 14px;
+          background-color: #b5bfff;
+          padding: 4px 10px;
+          min-width: 100px;
+          border-radius: 10px;
+          color: #0a155d;
+          text-align: center;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 600;
+          margin-top: -75px;
+          display: none;
+          transition: all 0.5s !important;
+
+          &:after {
+            content: "";
+            position: absolute;
+            border: 10px solid #b5bfff;
+            border-color: #a3aef0 transparent transparent transparent;
+            right: 43%;
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  .table {
+    width: auto;
+
+    .table-header {
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #3d415a;
+
+      th {
+        padding: 15px 20px;
+      }
+
+      .status-col {
+        width: auto;
+      }
+
+      .code-col {
+        width: auto;
+      }
+
+      .action-col {
+        width: auto;
+      }
+
+      .date-col {
+        width: auto;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+
+    .table-cell {
+      border: none;
+      padding: 0 10px;
+      transition: all 0.5s !important;
+
+      &:hover {
+        background-color: #e7eaff;
+        box-shadow: 0px 0px 10px -2px #cfcdffd6;
+      }
+
+      td {
+        border-top: 1px dashed #e7eaff;
+        padding: 15px 20px;
+        font-size: 16px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    }
+  }
+}

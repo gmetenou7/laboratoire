@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 30px;
+    box-shadow: 0 0px 6px -2px #23214135;
+    border-radius: 0 0 10px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .header-links {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+
+        .header-link {
+            margin: 0;
+
+            .header-link-link {
+                font-size: 16px;
+                text-decoration: none;
+                color: #3f3f4e;
+                font-weight: 500;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                transition: all 0.5s !important;
+
+                &:hover {
+                    color: $second-green;
+                }
+            }
+
+            .header-link-link-active {
+                color: $second-green;
+            }
+
+        }
+    }
+
+    .avatar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border: 2px dashed $main-green;
+            border-radius: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .header {
+
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 8px 30px;
+        box-shadow: 0 0px 6px -2px #23214135;
+
+        .header-links {
+            list-style: none;
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+
+            .header-link {
+                margin: 0;
+
+                .header-link-link {
+                    font-size: 16px;
+                    text-decoration: none;
+                    color: #3f3f4e;
+                    font-weight: 500;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    transition: all 0.5s !important;
+
+                    &:hover {
+                        color: $second-green;
+                    }
+                }
+
+                .header-link-link-active {
+                    color: $second-green;
+                }
+
+            }
+        }
+
+        .avatar-container {
+            .avatar {
+                width: 30px;
+                height: 30px;
+                border: 2px dashed $main-green;
+                border-radius: 100%;
+            }
+        }
+    }
+}

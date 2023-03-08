@@ -1,0 +1,110 @@
+.single-employee {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding: 60px 30px;
+    .employee-form-layout {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        .form-headline{
+            font-size: 30px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+    }
+    .employee-content {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 30px;
+        .form-headline{
+            font-size: 25px;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+            border-left: 5px solid $main-blue;
+            padding-left: 10px;
+        }
+        .employee-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .info-headline {
+                font-size: 30px;
+                font-weight: 500;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-bottom: 30px;
+                border-left: 5px solid $main-blue;
+                padding-left: 10px;
+            }
+            ul {
+                padding: 0;
+                list-style: none;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                li {
+                    span {
+                        color: black;
+                    }
+                }
+            }
+            .employee-state{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-self: flex-start;
+                align-items: center;
+                h5 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+                .state-active{
+                    padding: 5px 20px;
+                    background-color: $color-success;
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    border-radius: 5px;
+                }
+                .state-inactive{
+                    padding: 5px 20px;
+                    background-color: $color-danger;
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    border-radius: 5px;
+                }
+                .hidden-btn {
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #ffffff;
+                    border-radius: 100%;
+                    transition: all 0.5s !important;
+                    .hidden-icon {
+                        font-size: 15px;
+                    }
+                }
+
+                .bg-main {
+                    background-color: $main-blue !important;
+                    transition: all 0.5ms;
+                }
+            }
+            
+        }
+        .update-password{
+            padding: 20px 0;
+            border-top: 2px dashed #a0a0a0;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+a {
+    text-decoration: none;
+    color: #646d7d;
+
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: all 0.5ms !important;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #000000;
+            box-shadow: 0px 4px 10px -2px #cfcdffd6;
+            transition: all 0.5ms !important;
+
+            .card-icon {
+                color: #ffffff;
+                background-color: hsla(231, 93%, 94%, 0.6);
+
+            }
+
+            .card-text {
+                color: #ffffff;
+            }
+        }
+
+        .card-icon {
+            font-size: 60px;
+            color: #000000;
+            background-color: hsla(0, 0%, 0%, 0.2);
+            padding: 10px;
+            border-radius: 100%;
+            transition: all 0.5s !important;
+
+        }
+
+        .card-text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.5s !important;
+        }
+    }
+
+
+    .feature-main-blue {
+        &:hover {
+            background-color: $main-blue;
+
+            .card-icon {
+                background-color: hsla(243, 100%, 93%, 0.6);
+            }
+        }
+
+        .card-icon {
+            color: $main-blue;
+            background-color: hsla(244, 99%, 28%, 0.2);
+        }
+    }
+
+    .feature-main-green {
+        &:hover {
+            background-color: $main-green;
+
+            .card-icon {
+                background-color: hsla(87, 100%, 96%, 0.6);
+            }
+        }
+
+        .card-icon {
+            color: $main-green;
+            background-color: hsla(86, 54%, 51%, 0.2);
+        }
+    }
+}

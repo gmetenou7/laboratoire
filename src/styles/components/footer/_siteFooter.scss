@@ -1,0 +1,29 @@
+.site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .footer-text {
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .site-footer {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .footer-text {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.list-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.list-features {
+    display: flex;
+    flex-direction: column;
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+}
+
+.list-patients {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    z-index: 0;
+
+    .patients {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 0;
+
+    }
+}
+
+@media screen and (max-width:992px) {
+    .list-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .list-patients {
+        width: auto;
+
+        .patients {
+            width: auto;
+        }
+    }
+
+    .list-features {
+        .feature-title {
+            .title {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    }
+}

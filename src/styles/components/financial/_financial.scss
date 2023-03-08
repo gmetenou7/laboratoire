@@ -1,0 +1,46 @@
+.financial-state-form {
+    display: inline-flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: flex-end;
+    position: sticky;
+    top: 6%;
+    z-index: 50;
+    padding: 25px 0 10px 0;
+}
+
+
+.list-financial {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.financial-state-footer {
+    display: inline-flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0%;
+    z-index: 50;
+    padding: 25px 0 10px 0;
+
+    .pricing {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}

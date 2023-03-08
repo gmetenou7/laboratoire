@@ -1,0 +1,25 @@
+.accordion {
+    .accordion-header{
+        padding: 20px 40px;
+        border-radius: 5px;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .accordion {
+        .accordion-header{
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.tabs-container {
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .navigation-tab {
+        display: flex;
+        border-bottom: 2px solid #eeeeee;
+        align-items: center;
+        justify-content: center;
+        .tab-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            .tab-btn {
+                padding: 15px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .selected {
+                background-color: $main-blue;
+                color: #fff;
+            }
+        }
+        .tab-header {
+            margin-right: 30px;
+            float: right;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            .user-avatar {
+                height: 40px;
+                width: 40px;
+                border-radius: 100%;
+                border: 2px solid $main-green;
+            }
+        }
+    }
+
+    .tabs-body {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px;
+        width: 100%;
+    }
+}

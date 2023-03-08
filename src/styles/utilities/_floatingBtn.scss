@@ -1,0 +1,18 @@
+
+.floating-btn{
+    position: sticky;
+    bottom: 2%;
+    z-index: 10000;
+    color: #ffffff;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: none;
+    background-color: $second-green;
+    box-shadow: 0 0 10px -2px #c6b8b8;
+}

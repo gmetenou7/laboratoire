@@ -1,0 +1,207 @@
+.exam-result-container {
+    min-width: 595px;
+    min-height: 842px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2cm 1cm;
+    background: url("../../../../component/assets/exam_result_bg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-color: #ffffff;
+
+    .result-content {
+        .exam-result-header {
+            font-size: 26px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: $second-green;
+            padding: 5px;
+        }
+
+        .result-exam-info {
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+            .exam-info-header {
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                color: #000;
+            }
+
+            hr {
+                border: solid 1px #000;
+                background-color: #000;
+                box-shadow: 1px 1px 0px rgba(26, 26, 26, 0.725);
+            }
+
+            .patient-info {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .info-detail {
+                    display: flex;
+                    gap: 100px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            color: #000;
+                            margin: 5px 0;
+
+                            span {
+                                font-size: 17px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .exam-result-body {
+            width: 100%;
+
+            .exam-info-header {
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                color: #000;
+            }
+
+            .result-content {
+                padding: 10px;
+                color: #000;
+
+                table {
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin-top: 20px;
+                    border-collapse: collapse;
+
+                    td,
+                    th {
+                        border: 1px solid #2b2b2b;
+
+                        .exam-normal-values {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    .width-40 {
+                        width: 40%;
+                    }
+
+                    .width-25 {
+                        width: 25%;
+                    }
+
+                    .width-10 {
+                        width: 10%;
+                    }
+
+                    thead {
+                        font-size: 17px;
+
+                        th {
+                            padding: 10px;
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            padding: 10px;
+
+                            td {
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .comment {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 16px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+
+            hr {
+                border: solid 1px #000;
+                background-color: #000;
+                box-shadow: 1px 1px 0px rgba(26, 26, 26, 0.725);
+            }
+
+            .other-infos {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .other-infos-content {
+                    p {
+                        font-size: 16px;
+                        color: #000;
+                        font-weight: 400;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                        span {
+                            font-size: 17px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .tamp {
+                    img {
+                        height: 200px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .result-exam-footer {
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0px 200px;
+            text-align: center;
+            margin: 5px 0;
+            color: rgba(0, 0, 0, 0.803);
+        }
+
+        hr {
+            border: solid 1px $main-green;
+            background-color: $main-green;
+            box-shadow: 1px 1px 0px rgba(26, 26, 26, 0.725);
+        }
+    }
+}

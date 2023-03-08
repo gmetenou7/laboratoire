@@ -1,0 +1,26 @@
+.toast-container-content {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  list-style: none;
+  bottom: 1%;
+  right: 1%;
+  .toast-item{
+    width: 300px;
+    background: #ffffff;
+    flex: 0 0 100px;
+    position: relative;
+    border-radius: 10px;
+    .close-toast-btn {
+      outline: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      background: white;
+      border: none;
+    }
+  }
+}

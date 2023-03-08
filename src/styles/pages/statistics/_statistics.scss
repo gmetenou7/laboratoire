@@ -1,0 +1,46 @@
+.statistics {
+    .laboratory-stats {
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+
+        .info-header {
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-left: solid 4px $main-green;
+            padding-left: 10px;
+        }
+
+        .stats {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    .agencies-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 30px;
+        border-radius: 10px;
+
+        .info-header {
+            font-size: 22px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-left: solid 4px $main-green;
+            padding-left: 10px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+    }
+}

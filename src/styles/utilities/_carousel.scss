@@ -1,0 +1,10 @@
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+
+    .inner-carousel {
+        display: inline-flex;
+    }
+}

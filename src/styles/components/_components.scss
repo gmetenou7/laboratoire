@@ -1,0 +1,18 @@
+@import "./auth/layout";
+@import "./sidebar/sidebar";
+@import "./header/header";
+@import "./footer/siteFooter";
+// @import "./toast/toast";
+@import "./card/statistiqueCard";
+@import "./card/featureCard";
+@import "./tables/tables";
+@import "./patient/singlePatientView";
+@import "./exams/printableExam";
+@import "./exams/glassware/createGlassware";
+@import "./exams/barCode/barCodePrintable";
+@import "./exams/resultsExams/resultPrintable";
+@import "./agencies/listAgencies";
+@import "./exams/transferVoucherForm";
+@import "./services/servicesCard";
+@import "./financial/financial";
+@import "./financial/financialPrintable"

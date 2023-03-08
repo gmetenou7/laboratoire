@@ -1,0 +1,31 @@
+.create-patient-page-layout{
+    display: flex;
+    gap: 40px;
+    .patient-form-container{
+        padding: 30px 60px;
+        width: 60%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        .form-headline {
+            font-size: 30px;
+            font-weight: 300;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen  and (max-width : 992px) {
+    .create-patient-page-layout{
+        display: flex;
+        flex-direction: column;
+        .patient-form-container{
+            padding: 20px;
+            width: 100%;
+            .form-headline {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

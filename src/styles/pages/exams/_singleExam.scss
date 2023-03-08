@@ -1,0 +1,213 @@
+.single-exam-page-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+
+    .exams-info {
+        width: 30%;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        position: sticky;
+        top: 10%;
+
+        ul {
+            list-style: none;
+            padding: none;
+            margin: 0;
+
+            .info-header {
+                font-size: 25px;
+                font-weight: 600;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-left: solid 4px $main-green;
+                padding-left: 10px;
+            }
+
+            li {
+                font-size: 16px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 400;
+
+                span {
+                    font-weight: 500
+                }
+            }
+        }
+    }
+
+    .exams-asset {
+        width: 70%;
+
+        .exams-result-form-wrapper {
+            padding: 40px;
+            margin-bottom: 50px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px -2px #3d415a50;
+
+            .info-header-text {
+                font-size: 25px;
+                font-weight: 600;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-left: solid 4px $main-green;
+                padding-left: 10px;
+                margin-bottom: 30px;
+            }
+
+            .asset-header {
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-left: solid 4px $main-blue;
+                color: $second-green;
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .info-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .info-header-text {
+                font-size: 25px;
+                font-weight: 600;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-left: solid 4px $main-green;
+                padding-left: 10px;
+            }
+
+            .analyse-ended {
+                background-color: $second-blue;
+                padding: 10px 30px;
+                color: #ffffff;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+
+        .asset-wrapper {
+            width: 100%;
+
+            .asset-header {
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-left: solid 4px $main-blue;
+                color: $second-green;
+                padding-left: 10px;
+                margin-top: 20px;
+
+                span {
+                    font-size: 16px;
+                    color: #ffffff;
+                    background-color: #0A018E;
+                    padding: 5px 20px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+
+            thead {
+                font-size: 17px;
+
+                th {
+                    padding: 10px;
+                }
+            }
+
+            tbody {
+                tr {
+                    padding: 10px;
+
+                    td {
+                        padding: 10px;
+
+                        .exam-normal-values {
+                            list-style: none;
+                            display: flex;
+                            justify-content: flex-end;
+                            gap: 10px;
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+
+                        .ended {
+                            font-size: 22px;
+                            color: $color-success;
+                        }
+
+                        .waiting {
+                            font-size: 22px;
+                            color: $color-danger;
+                        }
+                    }
+                }
+            }
+        }
+
+        .type-comment {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            blockquote {
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .general-comment {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 2px dashed #3d415a91;
+
+            blockquote {
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

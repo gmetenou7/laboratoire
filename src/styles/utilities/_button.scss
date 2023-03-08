@@ -1,0 +1,113 @@
+.btn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-main {
+    background-color: $main-green;
+    transition: all 0.5s !important;
+    &:hover {
+        background-color: $second-green;
+        color: #ffff;
+    }
+}
+
+.btn-main-blue {
+    background-color: $main-blue;
+    transition: all 0.5s !important;
+    &:hover {
+        background-color: $second-blue;
+        color: #ffff;
+    }
+}
+
+.btn-simple{
+    padding: 5px 20px;
+    border-radius: 4px;
+    color: #ffff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn-mains {
+    background-color: $main-green;
+    transition: all 0.5s !important;
+    &:hover {
+        background-color: $second-green;
+        color: #ffff;
+    }
+    position: absolute;
+    right:    35px;
+    bottom:   35px;
+}
+
+.btn-white {
+    background-color: #cbcbcb;
+    transition: all 0.5s !important;
+    color: #ffff;
+    &:hover {
+        background-color: #aeaeae;
+        color: #ffff;
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+
+.btn-link-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 15px;
+    background-color: $main-blue;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s !important;
+    &:hover{
+        color: #ffff;
+        background-color: $second-blue;
+    }
+}
+
+.btn-link-green {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 15px;
+    background-color: $main-green;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s !important;
+    &:hover{
+        color: #ffff;
+        background-color: $second-green;
+    }
+}
+
+h {
+    color: #008000;
+}

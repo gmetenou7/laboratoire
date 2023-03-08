@@ -1,0 +1,136 @@
+.printable-wrapper{
+    background: url("../../../component/assets/exam_result_bg.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    .printable-header {
+        border: 2px solid #a9cae8;
+        .company-info{
+            display: flex;
+            flex-direction: column;
+            .company-logo{
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 50px;
+                height: 50px;
+                margin-top: 10px;
+            }
+            .company-info-items{
+                list-style: none;
+                .company-info-item{
+                    margin: 0;
+                    padding: 5px;
+                    font-size: 10px;
+                }
+            }
+        }
+        .patient-info{
+            .patient-info-items{
+                list-style: none;
+                border-left: 2px solid #a9cae8;
+                .patient-info-item{
+                    margin: 0;
+                    padding: 5px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .printable-headline{
+        font-size: 25px;
+        text-align: center;
+        margin: 20px 0;
+        background-color: $second-green;
+        padding: 5px 0;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    .printable-body{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .body-header{
+            border: 2px solid #a9cae8;
+            .doctor-info{
+                .doctor-info-items{
+                    list-style: none;
+                    border-right: 2px solid #a9cae8;
+                    .doctor-info-item{
+                        margin: 0;
+                        padding: 5px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .exam-state{
+                .exam-state-items{
+                    list-style: none;
+                    .exam-state-item{
+
+                    }
+                } 
+            }
+        }
+        .exam-content{
+            .exam-content-table{
+                color: #000;
+                font-size: 16px;
+                width: 100%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-collapse: collapse;
+                font-weight: 400;
+                .table-cell{
+                    border: 1px solid #2b2b2b;
+                    text-align: left;
+                    .nested-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        .table-cell-nested{
+                            border-top: 1px solid #2b2b2b;
+                            text-align: left;
+                        }
+                    }
+                }
+                th {
+                    border: 1px solid #2b2b2b;
+                    text-align: left;
+                    padding: 8px;
+                  }
+                .content-table-header{
+                    color: #000;
+                }
+
+                .type-exam {
+                    list-style: none;
+                    padding: 0;
+                    .glass-exam {
+                        padding: 0;
+                        margin: 0;
+                        padding: 2px 0;
+                        border-bottom: 1px solid #000;
+                    }
+                }
+            }
+            .price-container {
+                margin: 30px 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-size: 16px;
+                    margin: 0;
+                    span {
+                        margin: 0;
+                        font-size: 28px;
+                        background-color: $main-green;
+                        color: #ffffff;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+}

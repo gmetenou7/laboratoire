@@ -1,0 +1,23 @@
+.bg-main {
+    background-color: $main-blue !important;
+    transition: all 0.5ms;
+}
+
+.color-main {
+    color: $main-blue !important;
+}
+
+.color-info {
+    color: $main-info !important;
+}
+
+.color-danger {
+    color: $main-danger !important;
+}
+
+.bg-danger {
+    background-color: $color-danger !important;
+    &:hover {
+        background-color: #fc8e86;
+    }
+}

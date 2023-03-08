@@ -1,0 +1,33 @@
+.transfer-voucher {
+    height: calc(100vh - 120px);
+
+    .transfer-form {
+        padding: auto;
+
+        .messages {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: hsla(47, 92%, 47%, 0.1);
+            padding: 10px 20px;
+            border-radius: 10px;
+            gap: 60px;
+            margin-bottom: 40px;
+
+            .text-message {
+                font-size: 16px;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 500;
+                color: #a4830a;
+                width: 400px;
+            }
+
+            .message-icon {
+                font-size: 40px;
+                color: #E5B50A;
+            }
+        }
+    }
+}

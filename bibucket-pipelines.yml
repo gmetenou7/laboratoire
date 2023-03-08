@@ -1,0 +1,53 @@
+
+image: node:12
+pipelines:
+  
+  custom: # Pipeline that only runs manually
+    UAT_build_ws_image_from_master: # Build tag the current version with uat
+      - variable:
+          - name:  TAG_VERSION
+      - step:  
+         services:  
+            - docker
+         caches:
+             - node  
+         script:
+            # - git checkout tags/$TAG_VERSION && git branch build-$TAG_VERSION && git branch build-$TAG_VERSION
+            - export FRONTENDLABORATOIRE_VERSION=${BIBUCKET_BUILD_NUMBER}
+            - export IMAGE_REPOS=$DOCKER_HUB_USERNAME/frontendlaboratoire
+            - export IMAGE_NAME=$IMAGE_REPO:$FRONTENDLABORATOIRE_VERSION
+            - export IMAGE_NAME_UAT_TAG=$IMAGE_REPO:uat
+            - export IMAGE_NAME_LATEST_TAG=$IMAGE_REPO:latest
+            - docker build -t $IMAGE_NAME
+            - docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD
+            - docker tag $IMAGE_NAME $IMAGE_NAME_UAT_TAG
+            - docker tag $IMAGE_NAME $IMAGE_NAME_LATEST_TAG
+            - docker push $IMAGE_NAME
+            - docker push $IMAGE_NAME_UAT_TAG"
+            - docker push $IMAGE_NAME_LATEST_TAG
+            - echo "[Success] Image ${IMAGE_NAME} built and pushed"
+            - echo "- ${IMAGE_NAME_UAT_TAG}"
+            - echo "- ${IMAGE_NAME_LATEST_TAG}"
+
+  UAT_deploy_frontendlaboratoire_tag_to_uat:
+    - variable: 
+        - name: IMAGE_TAG_VERSION
+    - step:
+         services:
+            - docker
+         script:
+            - echo 'Deploying frontendlaboratoire:${FRONTENDLABORATOIRE_VERSION}...'
+            - export FRONTENDLABORATOIRE_VERSION=${IMAGE_TAG_VERSION}
+            - pipe: atlassian/ssh-run:0.2.6
+              variable:
+                 SSH_USER: $EMPATA_UAT_USER
+                 SERVER: $EMPATA_UAT_SERVER
+                 DEBUG: "true"
+                 COMMAND: >
+                    docker stop frontendlaboratoire || true;
+                    docker rm -f frontendlaboratoire || true;
+                    docker run -p 3013:3010 -d --restart unless-stopped --name frontendlaboratoire --name  frontendlaboratoire abyster01/frontendlaboratoire:${FRONTENDLABORATOIRE_VERSION} || { echo 'Deployment failed' ; exit 1; };
+                    docker ps | grep frontendlaboratoire;
+                 MODE: "command"   
+                 
+
