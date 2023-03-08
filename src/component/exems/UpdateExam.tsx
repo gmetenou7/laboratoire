@@ -103,10 +103,14 @@ export const UpdateExam = (props) => {
         setLoadingSingleExam(true)
         try {
             const response = await callApi(
-                true, 
-                `examens/${props.examId}`, 
-                "get", 
-                null
+
+                true,
+                "specificexamens",
+                'post',
+                {
+                    codebon: props.examId,
+                },
+      null
             );
             if (response?.data?.success) {
                 setSingleExam(response.data.data);                

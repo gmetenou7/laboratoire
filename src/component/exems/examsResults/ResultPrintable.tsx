@@ -4,7 +4,7 @@ import ReactToPrint from 'react-to-print';
 import callApi from "../../../Utils/Utils.tsx";
 import { formatDateTime } from "../../../component/utilities/dateTimeFormatter.ts"
 import QRCode from "react-qr-code";
-import tamp from "../../../component/assets/tamp.png"
+import tamp from "../../../component/assets/tamp-re.png"
 
 interface ReferenceValue {
     code: number,
@@ -237,6 +237,8 @@ export function ResultPrintable({ examId }) {
 
                                     <p className='mt-20'>Les analyses sont certifiées correctes</p>
                                     <p className='mt-10'>Pour le Laboratoire</p>
+                                    <p className='mt-10'><strong>Dr. KABAMBA NUMBI</strong></p>
+                                    <p className='mt-10'>Médecin biologiste</p>
                                 </div>
                                 <div className="tamp">
                                     <img src={tamp} alt="tamp" />
@@ -246,8 +248,11 @@ export function ResultPrintable({ examId }) {
                     </div>
                     <div className="result-exam-footer">
                         <hr />
-                        <p><strong>C</strong>entre de <strong>d</strong>épistage Le <strong>M</strong>agnolia I ASBL N° 92/4311 98 Avenue de la Justice I Commune de la Gombe Ville Province de Kinshasa</p>
-                        <p>Téléphone : <strong>+243977775757 ; +243999052057</strong></p>
+                        <p><strong>C</strong>entre de <strong>d</strong>épistage et diagnostic Le <strong>M</strong>agnolia 
+                             I ASBL N° 92/4311 98 Avenue de la 
+                            Justice I Commune de la Gombe Ville Province de Kinshasa 
+                        </p>
+                        <p>Téléphone : <strong>+243977775757 ; +243999217917</strong></p>
                     </div>
                 </div>}
             <div className='modal-content-footer'>
