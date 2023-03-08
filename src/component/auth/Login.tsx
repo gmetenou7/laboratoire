@@ -88,11 +88,11 @@ export function Login() {
           }}
           error={{ for: "password", text: errors?.password?.message }}
         />
-        <ReCAPTCHA
+        {/*<ReCAPTCHA
           style={{ marginTop: 10, marginBottom: 15, with: "100%" }}
           sitekey="6LdDh80ZAAAAAJKGgWIKw_veDK0c5MOckGkP6fFe"
           onChange={recaptchaOnChange}
-        />
+        />disabled={recaptchaIsValid === false || loading}*/}
         <label htmlFor="show-password" className="input-checkbox-group">
           <input
             className="checkbox-field"
@@ -110,7 +110,6 @@ export function Login() {
               : "btn btn-main"
           }
           type="submit"
-          disabled={recaptchaIsValid === false || loading}
         >
           Connexion
           {loading && (
